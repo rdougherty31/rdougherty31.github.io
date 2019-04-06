@@ -9,7 +9,7 @@ anime({
         easing: 'easeInOutSine'
     },
     opacity: '0.5',
-    delay: function(el, i, l){return i*80}
+    delay: function(el, i, l){return i*50}
     // loop: true
 });
 // Wrap every letter in a span

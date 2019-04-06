@@ -24,23 +24,23 @@ html, body {
     height: 33rem;
     margin-top: -12rem;
 }
-.red {
+.left {
     background: red;
     z-index:1;
 }
-.purple {
+.midLeft {
     background: #663399;
     z-index: 2;
     margin-top: -25rem;
     margin-left: 27%;
 }
-.teal {
+.right {
     background: teal;
     z-index: 3;
     margin-top: -50rem;
     margin-left: 60%;
 }
-.mustard {
+.midRight {
     background: #e1ad01;
     z-index: 4;
     margin-top: -9rem;
@@ -49,8 +49,8 @@ html, body {
 .letters {
     visibility: hidden;
     font-size: 8rem;
-    color: lightgrey;
-    text-shadow: 0 0 1px black;
+    color: grey;
+    text-shadow: 0 0 2px white;
     letter-spacing: .8rem;
 }
 .ml1 {
