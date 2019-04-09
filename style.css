@@ -203,4 +203,25 @@ hr {
     .headshot {
         margin-left: 12%;
     }
+    .nav {
+        display: block;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 375px) {
+    .headshot {
+        margin-left: 5%;
+    }
+}
+@media (max-width: 325px) {
+    .headshot {
+        margin-left: 10%;
+    }
+    .nav {
+        display: block;
+        margin-left: 20%;
+    }
+    .letters {
+        margin-left: 10%;
+    }
 }
