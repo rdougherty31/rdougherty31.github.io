@@ -203,7 +203,8 @@ hr {
     }
     .nav {
         display: block;
-        margin-left: 5%;
+        width: 100%;
+        margin-left: 0 auto;
     }
 }
 @media (max-width: 375px) {
@@ -213,13 +214,22 @@ hr {
 }
 @media (max-width: 325px) {
     .headshot {
-        margin-left: 10%;
-    }
-    .nav {
-        display: block;
-        margin-left: 20%;
+        margin-left: 4%;
     }
     .letters {
+        font-size: 2rem;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .text-wrapper {
         margin-left: 10%;
+    }
+}
+@media (max-width: 300px) {
+    .headshot {
+        margin-left: 0;
+    }
+    .text-wrapper {
+        margin-left: 0;
     }
 }
