@@ -15,9 +15,9 @@ html, body {
 .portfolio a {
     display: block;
     color: #554848;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
     text-decoration: none;
     font-family: arial;
 }
@@ -37,9 +37,6 @@ html, body {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
 }
-#threeCourse {
-    padding-bottom: 2rem;
-}
 .flex {
     background: linear-gradient(#fff, #f1f1f1);
     width: 100%;
@@ -57,6 +54,7 @@ html, body {
     width: 40rem;
     height: 33rem;
     margin-top: -12rem;
+    overflow: hidden;
 }
 .left {
     background: red;
