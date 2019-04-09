@@ -1,3 +1,9 @@
+function portfolioPage() {
+    $(".portfolio").css("display","block");
+    console.log(".portfolio is now block");
+}
+$("#portfolio").click(portfolioPage);
+
 anime({
     targets: '.box',
     // translateX: [
