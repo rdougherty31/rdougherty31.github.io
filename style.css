@@ -5,19 +5,18 @@ html, body {
     text-align: center;
     position: relative;
     z-index: 51;
-    margin-top: -35rem;
     width: 40%;
     margin-left: 30%;
     background: rgba(255,255,255,.9);
-    margin-top: -35rem;
+    margin-top: -34rem;
     display: none;
 }
 .portfolio a {
-    display: block;
+    display: inline-block;
     color: #554848;
-    margin: .5rem;
-    padding: .5rem;
-    font-size: 1rem;
+    margin: .5rem .1rem;
+    padding: .5rem .1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     font-family: arial;
 }
@@ -37,6 +36,10 @@ html, body {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
 }
+#threeCourse {
+    margin-bottom: 2rem;
+
+}
 .flex {
     background: linear-gradient(#fff, #f1f1f1);
     width: 100%;
@@ -44,7 +47,7 @@ html, body {
 }
 .subheader {
     font-size: 1.5rem;
-    display: block;
+    display: inline;
     font-family: arial;
     font-weight: 100;
     color: #554848;
@@ -71,6 +74,9 @@ html, body {
     z-index: 3;
     margin-top: -50rem;
     margin-left: 60%;
+}
+#phone:after {
+    content: "   |";
 }
 .midRight {
     background: #e1ad01;
@@ -144,6 +150,7 @@ hr {
   .ml1 .line2 { bottom: 0; }
   
   /* Media Queries */
+
   @media (max-width: 1450px) {
       .headshot {
           margin-left: 37%;
@@ -185,6 +192,9 @@ hr {
 @media (max-width: 575px) {
     .headshot {
         margin-left: 21%;
+    }
+    .subheader:nth-child(15) {
+        display: none;
     }
 }
 @media (max-width: 500px) {
@@ -233,3 +243,6 @@ hr {
         margin-left: 0;
     }
 }
+
+
+/* anime.js experiments */
