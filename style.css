@@ -10,6 +10,8 @@ html, body {
     background: rgba(255,255,255,.9);
     margin-top: -34rem;
     display: none;
+    box-shadow: 0 0 1rem #807e7e inset;
+    border-radius: .3rem;
 }
 .portfolio a {
     display: inline-block;
@@ -31,6 +33,7 @@ html, body {
     margin-left: 39%;
     z-index: 50;
     display: block;
+    border: .2rem dotted #6a6868;
 }
 #wordguess {
     margin-top: 1.5rem;
@@ -51,6 +54,7 @@ html, body {
     font-family: arial;
     font-weight: 100;
     color: #554848;
+    text-shadow: 0 0 0.15rem white;
 }
 .box {
     position: relative;
@@ -62,33 +66,34 @@ html, body {
 .left {
     background: red;
     z-index:1;
+    box-shadow: 5px 5px 5px grey;
 }
 .midLeft {
     background: #663399;
-    z-index: 2;
+    z-index: 6;
     margin: 0 auto;
     margin-top: -25rem;
+    box-shadow: 0 0 13px black;
 }
 .right {
     background: teal;
     z-index: 3;
     margin-top: -50rem;
     margin-left: 60%;
-}
-#phone:after {
-    content: "   |";
+    box-shadow: 8px 12px 10px grey;
 }
 .midRight {
     background: #e1ad01;
     z-index: 4;
     margin-top: -9rem;
     margin-left: 48%;
+    box-shadow: 12px 22px 15px grey;
 }
 .letters {
     /* visibility: hidden; */
     font-size: 4rem;
     color: #554848;
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 .25rem white;
     letter-spacing: .4rem;
     display: block;
 }
