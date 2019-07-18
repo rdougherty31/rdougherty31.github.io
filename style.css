@@ -12,6 +12,11 @@ html, body {
     display: none;
     box-shadow: 0 0 1rem #807e7e inset;
     border-radius: .3rem;
+    overflow: scroll;
+    height: 25rem;
+}
+.portfolio::-webkit-scrollbar {
+    display: none;
 }
 .portfolio a {
     display: inline-block;
@@ -153,6 +158,31 @@ hr {
   
   .ml1 .line1 { top: 0; }
   .ml1 .line2 { bottom: 0; }
+
+  .portfolio a:hover {
+    animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  /* Animation on Portfolio links */
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
   
   /* Media Queries */
 
@@ -248,6 +278,3 @@ hr {
         margin-left: 0;
     }
 }
-
-
-/* anime.js experiments */
