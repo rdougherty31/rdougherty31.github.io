@@ -215,6 +215,10 @@ hr {
     .headshot {
         margin-left: 27%;
     }
+    .portfolio {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 @media (max-width: 675px) {
     .headshot {
