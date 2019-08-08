@@ -1,11 +1,11 @@
-// $( document ).ready(function() {
-//     function portfolioPage() {
-//         $(".headshot").css("display","none");
-//         $(".portfolio").css("display","block");
-//     }
-//     $("#portfolio").click(function() {
-//         portfolioPage();
-//     });
+$( document ).ready(function() {
+    function portfolioPage() {
+        $(".headshot").css("display","none");
+        $(".portfolio").css("display","block");
+    }
+    $("#portfolio").click(function() {
+        portfolioPage();
+    });
 
 //     anime({
 //         targets: '.box',
@@ -17,4 +17,4 @@
 //         delay: function(el, i, l){return i*50}
 //         // loop: true
 //     });
-// });
+});
