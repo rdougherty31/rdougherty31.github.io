@@ -67,6 +67,7 @@ html, body {
     height: 33rem;
     margin-top: -12rem;
     overflow: hidden;
+    opacity: 0.5;
 }
 .left {
     background: red;
@@ -217,8 +218,8 @@ hr {
     }
     .portfolio {
         width: 80%;
-        margin-left: 10%;xit
-        
+        margin-left: 10%;
+
     }
 }
 @media (max-width: 675px) {
