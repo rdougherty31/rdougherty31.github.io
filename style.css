@@ -254,6 +254,7 @@ hr {
 @media (max-width: 425px) {
     .headshot {
         margin-left: 12%;
+        width: 90%;
     }
     .nav {
         display: block;
