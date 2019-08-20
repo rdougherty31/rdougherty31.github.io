@@ -253,7 +253,7 @@ hr {
 }
 @media (max-width: 425px) {
     .headshot {
-        margin-left: 12%;
+        margin-left: 5%;
         width: 90%;
     }
     .nav {
