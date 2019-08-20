@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
 }
+#mainContainer {
+    overflow: hidden;
+}
 .portfolio {
     text-align: center;
     position: relative;
