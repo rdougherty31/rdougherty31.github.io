@@ -1,8 +1,26 @@
 html, body {
     margin: 0;
 }
+::selection {
+    background: #ffb7b7;
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #ffb7b7;
+    color: #fff;
+}
 #mainContainer {
     overflow: hidden;
+}
+h1 {
+font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+}
+footer {
+    font-family: 'Fredericka the Great', cursive;
+    /* padding-bottom: 10%; */
+    margin-top: -3.5%;
+    font-size: 2rem;
 }
 .portfolio {
     text-align: center;
@@ -13,7 +31,7 @@ html, body {
     background: rgba(255,255,255,.9);
     margin-top: -34rem;
     display: none;
-    box-shadow: 0 0 1rem #807e7e inset;
+    box-shadow: 0 0 .3rem #807e7e inset;
     border-radius: .3rem;
     overflow: scroll;
     height: 25rem;
@@ -28,20 +46,27 @@ html, body {
     padding: .5rem .1rem;
     font-size: 1.3rem;
     text-decoration: none;
-    font-family: arial;
+    font-family: 'Livvic', sans-serif;
 }
 .portfolio a:hover {
     color: #e1ad01;
+    animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.portfolio a:active {
+    color: #e1ad01;
 }
 .headshot {
-    width: 20rem;
+    width: 19rem;
     height: 25rem;
     position: absolute;
-    margin-top: -34rem;
-    margin-left: 39%;
+    margin-top: -33rem;
+    margin-left: 40%;
     z-index: 50;
     display: block;
-    border: .2rem dotted #6a6868;
+    border: .1rem dashed #6a6868;
 }
 #wordguess {
     margin-top: 1.5rem;
@@ -57,12 +82,13 @@ html, body {
     height: 100%;
 }
 .subheader {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: inline;
-    font-family: arial;
-    font-weight: 100;
     color: #554848;
     text-shadow: 0 0 0.15rem white;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
 }
 .box {
     position: relative;
@@ -76,12 +102,13 @@ html, body {
     background: red;
     z-index:1;
     box-shadow: 5px 5px 5px grey;
+    margin-top: -11rem;
 }
 .midLeft {
     background: #663399;
     z-index: 6;
     margin: 0 auto;
-    margin-top: -25rem;
+    margin-top: -27rem;
     box-shadow: 0 0 13px black;
 }
 .right {
@@ -100,18 +127,20 @@ html, body {
 }
 .letters {
     /* visibility: hidden; */
-    font-size: 4rem;
+    font-size: 5rem;
     color: #554848;
     text-shadow: 0 0 .25rem white;
     letter-spacing: .4rem;
     display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-transform: lowercase;
 }
 .ml1 {
-    font-weight: 900;
     font-size: 3.5em;
     display: relative;
     margin: 0 auto;
-    text-align: center;
+    text-align: right;
   }
 #nav {
     position: relative;
@@ -124,17 +153,22 @@ html, body {
 .nav {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
-    font-family: arial;
+    font-size: 2rem;
     padding: 1rem;
-    border: 1px solid #fff;
-    background: #867f8c;
+    font-family: 'Londrina Outline', cursive;
+    text-transform: uppercase;
+    /* border: 1px solid #fff;
+    background: rgba(255,255,255,.15); */
 }
 .nav:hover {
-    background: rgba(225,173,1,.75);
+    /* background: rgba(225,173,1,.75); */
+    color: #ffef63;
+    font-weight: bold;
 }
 hr {
     width: 75%;
+    /* border-top: none; */
+    border-top: 1px solid #e3e3e3;
 }
 .ml1 .letter {
     display: inline-block;
@@ -163,12 +197,6 @@ hr {
   .ml1 .line1 { top: 0; }
   .ml1 .line2 { bottom: 0; }
 
-  .portfolio a:hover {
-    animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
   /* Animation on Portfolio links */
   @keyframes shake {
     10%, 90% {
@@ -199,6 +227,10 @@ hr {
     .headshot {
         margin-left: 35%;
     }
+    .portfolio {
+        width: 48%;
+        margin-left: 26%;
+    }
 }
 @media (max-width: 1050px) {
     .headshot {
@@ -209,10 +241,18 @@ hr {
     .headshot {
         margin-left: 31%;
     }
+    .portfolio {
+        width: 58%;
+        margin-left: 21%;
+    }
 }
 @media (max-width: 850px) {
     .headshot {
         margin-left: 29%;
+    }
+    .portfolio {
+        width: 68%;
+        margin-left: 16%;
     }
 }
 @media (max-width: 750px) {
@@ -250,31 +290,41 @@ hr {
     .headshot {
         margin-left: 15%;
     }
+    .letters {
+        font-size: 4rem;
+    }
+    .portfolio {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 @media (max-width: 425px) {
     .headshot {
-        margin-left: 5%;
-        width: 90%;
+        margin-left: 13%;
+        width: 74%;
     }
     .nav {
         display: block;
         width: 100%;
         margin-left: 0 auto;
+        background: #808080db;
+    }
+    .letters {
+        font-size: 3rem;
+                margin-bottom: 0;
     }
 }
 @media (max-width: 375px) {
     .headshot {
-        margin-left: 5%;
+        margin-left: 10%;
+        width: 80%;
     }
 }
 @media (max-width: 325px) {
-    .headshot {
-        margin-left: 4%;
-    }
     .letters {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 1rem auto;
-        text-align: center;
+        /* text-align: center; */
     }
     .text-wrapper {
         margin-left: 10%;
@@ -283,8 +333,13 @@ hr {
 @media (max-width: 300px) {
     .headshot {
         margin-left: 0;
+        width: 100%;
+        border: none;
     }
     .text-wrapper {
         margin-left: 0;
+    }
+    .letters {
+        font-size: 2rem;
     }
 }
