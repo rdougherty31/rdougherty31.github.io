@@ -302,16 +302,21 @@ hr {
     .headshot {
         margin-left: 13%;
         width: 74%;
+        margin-top: -36rem;
     }
     .nav {
         display: block;
         width: 100%;
         margin-left: 0 auto;
         background: #808080db;
+        font-size: 2rem;
     }
     .letters {
         font-size: 3rem;
-                margin-bottom: 0;
+        margin-bottom: 0;
+    }
+    footer {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 375px) {
@@ -341,5 +346,8 @@ hr {
     }
     .letters {
         font-size: 2rem;
+    }
+    footer {
+        font-size: 1rem;
     }
 }
