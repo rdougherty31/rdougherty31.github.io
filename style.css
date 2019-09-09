@@ -48,7 +48,7 @@ footer {
     font-family: 'Livvic', sans-serif;
 }
 .portfolio a:hover {
-    color: #e1ad01;
+    color: #ffef63;
     animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
