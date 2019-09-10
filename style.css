@@ -153,13 +153,13 @@ footer {
 }
 .nav {
     text-decoration: none;
-    color: #663399;
+    color: #fff;
     font-size: 2rem;
     padding: 1rem;
     font-family: 'Londrina Outline', cursive;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(255,255,255,.5);
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 }
 .nav:hover {
     /* background: rgba(225,173,1,.75); */
