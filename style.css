@@ -46,13 +46,15 @@ footer {
     font-size: 1.3rem;
     text-decoration: none;
     font-family: 'Livvic', sans-serif;
+    transition: font-size .5s;
 }
 .portfolio a:hover {
     color: #ffef63;
-    animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
+    /* animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0); */
     backface-visibility: hidden;
     perspective: 1000px;
+    font-size: 2rem;
 }
 .portfolio a:active {
     color: #e1ad01;
@@ -198,7 +200,7 @@ hr {
   .ml1 .line2 { bottom: 0; }
 
   /* Animation on Portfolio links */
-  @keyframes shake {
+  /* @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
     }
@@ -214,7 +216,7 @@ hr {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
+  } */
   
   /* Media Queries */
 
