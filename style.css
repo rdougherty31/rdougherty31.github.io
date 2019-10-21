@@ -46,7 +46,7 @@ footer {
     font-size: 1.3rem;
     text-decoration: none;
     font-family: 'Livvic', sans-serif;
-    transition: font-size .5s;
+    transition: font-size .2s;
 }
 .portfolio a:hover {
     color: #ffef63;
@@ -54,7 +54,7 @@ footer {
     transform: translate3d(0, 0, 0); */
     backface-visibility: hidden;
     perspective: 1000px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .portfolio a:active {
     color: #e1ad01;
