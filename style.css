@@ -66,7 +66,7 @@ footer {
     margin-top: -33rem;
     margin-left: 40%;
     z-index: 50;
-    display: block;
+    display: none;
     border: .1rem dashed #6a6868;
 }
 #wordguess {
@@ -319,6 +319,9 @@ hr {
     }
     footer {
         font-size: 1.5rem;
+    }
+    #contact {
+        display: none;
     }
 }
 @media (max-width: 375px) {
